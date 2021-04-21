@@ -21,18 +21,26 @@ print("Hello World", "\nHello World :", 10)
 
 ## 4) Mortgage Calc
 
-orginal_principle = 800000
-new_principle = orginal_principle
+# orginal_principle = 800000
+# new_principle = orginal_principle
+# rate = 0.06
+# monthly_payments = 10000
+# months = 103
+
+# for x in range(months-1):
+#     new_principle += (new_principle * (rate/12)) - monthly_payments
+#     round(new_principle)
+
+# last_payment = round(new_principle + (new_principle * (rate/12)))
+
+# payout = (months-1) * monthly_payments + last_payment
+
+# percentage = (payout - orginal_principle) / orginal_principle
+
+principle = 800000
 rate = 0.06
-monthly_payments = 10000
+monthly_payments = 0
 months = 103
 
-for x in range(months-1):
-    new_principle += (new_principle * (rate/12)) - monthly_payments
-    round(new_principle)
-
-last_payment = round(new_principle + (new_principle * (rate/12)))
-
-payout = (months-1) * monthly_payments + last_payment
-
-percentage = (payout - orginal_principle) / orginal_principle
+monthly_payments = round(principle * (rate/12)*(1+rate/12)**months / ((1+(rate/12))**months - 1))
+print("Monthly payment: ", monthly_payments)
