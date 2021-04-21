@@ -21,16 +21,18 @@ print("Hello World", "\nHello World :", 10)
 
 ## 4) Mortgage Calc
 
-principle = 800000
+orginal_principle = 800000
+new_principle = orginal_principle
 rate = 0.06
 monthly_payments = 10000
 months = 103
 
 for x in range(months-1):
-    principle += (principle * (rate/12)) - monthly_payments
+    new_principle += (new_principle * (rate/12)) - monthly_payments
+    round(new_principle)
 
-last_payment = principle + (principle * (rate/12))
+last_payment = round(new_principle + (new_principle * (rate/12)))
 
-payout = (months - 1) * monthly_payments + last_payment
+payout = (months-1) * monthly_payments + last_payment
 
-print("Mortgage payout: ", payout)
+percentage = (payout - orginal_principle) / orginal_principle
