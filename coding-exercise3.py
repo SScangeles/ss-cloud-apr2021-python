@@ -12,15 +12,15 @@ print(s[2:])
 # 4) Mississippi to distinct character word
 print("".join(set("Mississippi")))
 
-
+import string
 def palindrome(input):
     result = input
+    exclude = set(string.punctuation)
     if len(input) > 1:
-        result = "".join(("".join([x for x in input.split(",")])).split())
+        result = "".join("".join(x for x in input if x not in exclude).split()).lower()
         if result[::-1] == result:
             return print("'{}' is a palindrome:".format(input), result)
     return print("not a palindrome:", result)
 
-
-# 5) Palindrome ignore single charc, COMMA, SPACE
-palindrome("h, an, nah")
+# 5) Palindrome ignore punctuations, single characters
+palindrome("H, an, nah!!")
