@@ -26,10 +26,12 @@ week = {
 day = week["sunday"]
 print("Sunday is day:", day)
 
-# 5) list to tuple
+# 5) 
+
+# 6) list to tuple
 list5 = [1, [1,2]]
 tuple5 = (list5[0], list5[1])
 print(tuple5)
 
-# 6) Mississippi to distinct character word
+# 7) Mississippi to distinct character word
 print("".join(set("Mississippi")))
