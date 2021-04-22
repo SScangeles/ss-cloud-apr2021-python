@@ -25,10 +25,9 @@ def palindrome(input):
         
     print("Panlindrome check:\n{}".format(input))
     for word in temp_list:
-        temp = word
         if len(word) > 1:
-            temp = "".join("".join(x for x in word if x not in exclude).split()).lower()
-            if temp[::-1] == temp:
+            word = "".join("".join(x for x in word if x not in exclude).split()).lower()
+            if word[::-1] == word:
                 result.append("Y")
             else:
                 result.append("N")
@@ -36,4 +35,4 @@ def palindrome(input):
     return print(result)
 
 # 5) Palindrome ignore punctuations, single characters
-palindrome("H, an, nah!!")
+palindrome(["H, an, nah!!", "wow", "test"])
