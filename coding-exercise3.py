@@ -10,9 +10,7 @@ s = "Sammy"
 print(s[2:])
 
 # 4) Mississippi to distinct character word
-# print("Mississippi"[:])
-
-# 5) Palindrome
+print("".join(set("Mississippi")))
 
 
 def palindrome(input):
@@ -20,8 +18,9 @@ def palindrome(input):
     if len(input) > 1:
         result = "".join(("".join([x for x in input.split(",")])).split())
         if result[::-1] == result:
-         return print("'{}' is palindrome:".format(input), result)
-    return print("not palindrome:", result)
+            return print("'{}' is a palindrome:".format(input), result)
+    return print("not a palindrome:", result)
 
 
+# 5) Palindrome
 palindrome("h, an, nah")
