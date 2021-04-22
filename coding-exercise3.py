@@ -23,7 +23,7 @@ def palindrome(input):
     else:
         temp_list.append(input)
         
-    print("Panlindrome check:\n{}".format(input))
+    print("Panlindrome check:\n{}".format(temp_list))
     for word in temp_list:
         if len(word) > 1:
             word = "".join("".join(x for x in word if x not in exclude).split()).lower()
@@ -31,8 +31,11 @@ def palindrome(input):
                 result.append("Y")
             else:
                 result.append("N")
+        else:
+            result.append("N")
         
     return print(result)
 
 # 5) Palindrome ignore punctuations, single characters
+# palindrome("H, an, nah!!")
 palindrome(["H, an, nah!!", "wow", "test"])
