@@ -14,10 +14,17 @@ print("".join(set("Mississippi")))
 
 import string
 def palindrome(input):
-    result = []
     exclude = set(string.punctuation)
+    result = []
+    temp_list = []
+
+    if isinstance(input, list):
+        temp_list = input
+    else:
+        temp_list.append(input)
+        
     print("Panlindrome check:\n{}".format(input))
-    for word in input:
+    for word in temp_list:
         temp = word
         if len(word) > 1:
             temp = "".join("".join(x for x in word if x not in exclude).split()).lower()
@@ -29,4 +36,4 @@ def palindrome(input):
     return print(result)
 
 # 5) Palindrome ignore punctuations, single characters
-palindrome(["H, an, nah!!", "def not a palin"])
+palindrome("H, an, nah!!")
