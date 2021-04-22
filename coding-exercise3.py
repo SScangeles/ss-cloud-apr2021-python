@@ -22,5 +22,5 @@ def palindrome(input):
     return print("not a palindrome:", result)
 
 
-# 5) Palindrome
+# 5) Palindrome ignore single charc, COMMA, SPACE
 palindrome("h, an, nah")
