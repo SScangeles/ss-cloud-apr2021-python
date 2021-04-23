@@ -8,11 +8,11 @@ print(list1)
 list2 = [1, 1, [1, 2]]
 print(list2[2][1])
 
-# 3) print list[1:]
+# 3) Print list[1:]
 list3 = ["a", "b", "c"]
 print(list3[1:])
 
-# 4) create dictionary and assign to var
+# 4) Create dictionary and assign to var
 week = {
     "sunday": 1,
     "monday": 2,
@@ -30,7 +30,7 @@ print("Sunday is day:", day)
 dictionaryList = {"k1": [1, 2, 3]}
 print(dictionaryList["k1"][1])
 
-# 6) list to tuple
+# 6) List to tuple
 list5 = [1, [1, 2]]
 tuple5 = (list5[0], list5[1])
 print(tuple5)

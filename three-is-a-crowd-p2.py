@@ -6,8 +6,8 @@ def isCrowded(party):
         print("Party list is not crowded.")
 
 def modList(party):
-    while len(partyList) > 2:
-            partyList.pop()
+    while len(party) > 2:
+            party.pop()
 
 partyList = ['mina', 'jihyo', 'tzuyu', 'sana', 'momo', 'nayeon', 'chaeyoung', 'jeongyeon', 'dahyun']
 isCrowded(partyList)

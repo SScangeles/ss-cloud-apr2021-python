@@ -11,8 +11,8 @@ def isCrowded(party):
         print("The party is empty.")
 
 def modList(party):
-    while len(partyList) > 0:
-            partyList.pop()
+    while len(party) > 0:
+            party.pop()
 
 partyList = ['mina', 'jihyo', 'tzuyu', 'sana', 'momo', 'nayeon', 'chaeyoung', 'jeongyeon', 'dahyun']
 isCrowded(partyList)
