@@ -54,11 +54,11 @@ div7_notMult5_test = [num for num in range(40) if num%7 == 0 and num%5 != 0]
 print(div7_notMult5_test)
 
 # Question: 2) Factorial
+import math
 def myfactorial(num):
-    result = 1
-    for x in range(1, num+1):
-        result = result*x
-    return result
+    if num == 0:
+        return 1
+    return num * math.factorial(num-1)
     
 def myfact_NumList(numlist):
     temp_list = []
@@ -72,3 +72,5 @@ def myfact_NumList(numlist):
     print("Factorial result: {}".format(result))
 
 myfact_NumList([4, 6, 8])
+
+# Question: 3) 
