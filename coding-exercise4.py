@@ -39,7 +39,7 @@ print(tuple5)
 set7 = set("Mississippi")
 print("".join(set7))
 
-# 8) Add "X" to set above?
+# 8) Add "X" to set above
 set7.add("X")
 print(set7)
 
@@ -68,4 +68,35 @@ def myfact_NumList(numlist):
 
 myfact_NumList([4, 6, 8])
 
-# Question: 3) 
+# Question: 3) Squared Dictionary
+print("Enter a number to display 'Squared Dictionary':")
+num = int(input())
+squared_dict = {}
+for x in range(1, num+1):
+    squared_dict[x] = x*x
+
+print(squared_dict)
+
+# Question: 4) Generate a list and a tuple
+print("Enter a list of numbers separated by a comma:")
+nums = input()
+numList = nums.split(",")
+numTup = tuple(numList)
+
+print("{}\n{}".format(numList, numTup))
+
+# Question: 5) Defining a class
+class MyClass:
+    def __init__(self):
+        self.str = ""
+
+    def userInput(self):
+        print("Enter something to display:")
+        self.str = input()
+
+    def printInput(self):
+        print(self.str)
+
+myclass = MyClass()
+myclass.userInput()
+myclass.printInput()
