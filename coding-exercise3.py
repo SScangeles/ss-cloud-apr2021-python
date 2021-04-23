@@ -38,4 +38,4 @@ def palindrome(input):
 
 # 5) Palindrome ignore punctuations, single characters
 # palindrome("H, an, nah!!")
-palindrome(["H, an, nah!!", "wow", "test"])
+palindrome(["H, an, nah!!", "wow", "test", "a"])
