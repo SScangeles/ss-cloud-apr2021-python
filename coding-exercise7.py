@@ -1,8 +1,8 @@
 
 # 1) Find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included)
-div7_notMult5 = [num for num in range(
+div7_mult5 = [num for num in range(
     1500, 2701) if num % 7 == 0 and num % 5 == 0]
-print(div7_notMult5)
+print(div7_mult5)
 
 # 2) Convert celsius to and from fahrenheit
 def celToFah(temperature):
