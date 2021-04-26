@@ -20,13 +20,14 @@ def bmiCalc(info):
 
 
 inputList = [(80, 1.73), (55, 1.58), (49, 1.91), [100, 1]]
-print(inputList)
 
 try:
     outputList = list(map(bmiCalc, inputList))
-    print(outputList)
 except TypeError as ex:
     print("TypeError:", ex)
     print("Input must be a list, consisting of weight and height pair items")
 except:
     print("Something went wrong")
+else:
+    print(inputList)
+    print(outputList)
